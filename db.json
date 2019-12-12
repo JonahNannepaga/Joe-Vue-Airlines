@@ -1,0 +1,165 @@
+{
+    "flightdb": [{
+            "fno": 121133,
+            "from": "Delhi",
+            "to": "Hyderabad",
+            "fromtime": "22:30",
+            "totime": "00:40",
+            "duration": "2hr 10min",
+            "price": 2500
+        },
+        {
+            "fno": 121134,
+            "from": "Delhi",
+            "to": "Hyderabad",
+            "fromtime": "22:30",
+            "totime": "00:40",
+            "duration": "2hr 10min",
+            "price": 2500
+        },
+        {
+            "fno": 121135,
+            "from": "Delhi",
+            "to": "Hyderabad",
+            "fromtime": "22:30",
+            "totime": "00:40",
+            "duration": "2hr 10min",
+            "price": 2500
+        },
+        {
+            "fno": 121136,
+            "from": "Delhi",
+            "to": "Hyderabad",
+            "fromtime": "22:30",
+            "totime": "00:40",
+            "duration": "2hr 10min",
+            "price": 2500
+        },
+        {
+            "fno": 121143,
+            "from": "Hyderabad",
+            "to": "Delhi",
+            "fromtime": "22:30",
+            "totime": "00:40",
+            "duration": "2hr 10min",
+            "price": 2500
+        },
+        {
+            "fno": 121144,
+            "from": "Hyderabad",
+            "to": "Delhi",
+            "fromtime": "22:30",
+            "totime": "00:40",
+            "duration": "2hr 10min",
+            "price": 2500
+        },
+        {
+            "fno": 121145,
+            "from": "Hyderabad",
+            "to": "Delhi",
+            "fromtime": "22:30",
+            "totime": "00:40",
+            "duration": "2hr 10min",
+            "price": 2500
+        },
+        {
+            "fno": 121146,
+            "from": "Hyderabad",
+            "to": "Delhi",
+            "fromtime": "22:30",
+            "totime": "00:40",
+            "duration": "2hr 10min",
+            "price": 2500
+        },
+        {
+            "fno": 121157,
+            "from": "Hyderabad",
+            "to": "Delhi",
+            "fromtime": "22:30",
+            "totime": "00:40",
+            "duration": "2hr 10min",
+            "price": 2500
+        },
+        {
+            "fno": 121178,
+            "from": "Hyderabad",
+            "to": "Bangalore",
+            "fromtime": "22:30",
+            "totime": "00:40",
+            "duration": "2hr 10min",
+            "price": 2500
+        },
+        {
+            "fno": 121158,
+            "from": "Hyderabad",
+            "to": "Bangalore",
+            "fromtime": "22:30",
+            "totime": "00:40",
+            "duration": "2hr 10min",
+            "price": 2500
+        },
+        {
+            "fno": 121159,
+            "from": "Hyderabad",
+            "to": "Bangalore",
+            "fromtime": "22:30",
+            "totime": "00:40",
+            "duration": "2hr 10min",
+            "price": 2500
+        },
+        {
+            "fno": 121160,
+            "from": "Bangalore",
+            "to": "Hyderabad",
+            "fromtime": "22:30",
+            "totime": "00:40",
+            "duration": "2hr 10min",
+            "price": 2500
+        },
+        {
+            "fno": 121161,
+            "from": "Bangalore",
+            "to": "Hyderabad",
+            "fromtime": "22:30",
+            "totime": "00:40",
+            "duration": "2hr 10min",
+            "price": 2500
+        },
+        {
+            "fno": 121162,
+            "from": "Bangalore",
+            "to": "Hyderabad",
+            "fromtime": "22:30",
+            "totime": "00:40",
+            "duration": "2hr 10min",
+            "price": 2500
+        },
+        {
+            "fno": 121138,
+            "from": "Delhi",
+            "to": "Hyderabad",
+            "fromtime": "22:30",
+            "totime": "00:40",
+            "duration": "2hr 10min",
+            "price": 2600
+        },
+        {
+            "fno": 121141,
+            "from": "Hyderabad",
+            "to": "Goa",
+            "fromtime": "22:30",
+            "totime": "00:40",
+            "duration": "2hr 10min",
+            "price": 2600
+        },
+        {
+            "fno": 121142,
+            "from": "Goa",
+            "to": "Hyderabad",
+            "fromtime": "22:30",
+            "totime": "00:40",
+            "duration": "2hr 10min",
+            "price": 2600
+        }
+    ]
+}
