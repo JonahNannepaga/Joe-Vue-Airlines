@@ -1,30 +1,30 @@
 <template>
     <div class="search-box">
-    <fieldset>
-        <legend>Search Flights</legend>
-        <form v-on:submit.prevent="submit(inputVals)">
-            <div class="radio-btns">
-                <input type="radio" v-model="inputVals.trip" value="oneway" name="trip" id="one-way" >
-                <label for="one-way">One Way</label>
-                <input type="radio" v-model="inputVals.trip" value="round" name="trip" id="round-trip">
-                <label for="round-trip">Round Trip</label>
-            </div>
+      <fieldset>
+          <legend>Search Flights</legend>
+          <form v-on:submit.prevent="submit(inputVals)">
+              <div class="radio-btns">
+                  <input type="radio" v-model="inputVals.trip" value="oneway" name="trip" id="one-way" >
+                  <label for="one-way">One Way</label>
+                  <input type="radio" v-model="inputVals.trip" value="round" name="trip" id="round-trip">
+                  <label for="round-trip">Round Trip</label>
+              </div>
 
-            <div class="flight-details">
-                <input type="text" v-model="inputVals.source" name="source-field" id="src-fld" placeholder="Origin" class="bck-origin">
-                <input type="text" v-model="inputVals.destination" name="destination-field" id="dst-fld" placeholder="Destination" class="bck-origin">
-                <input type="text" v-model="inputVals.departure" name="start-date" id="start-date" placeholder="Depart" class="bck-date" onfocus="(this.type='date')" onblur="(this.type='text')">
-                <input type="text" v-model="inputVals.arrival" name="end-date" id="end-date" placeholder="Return" class="bck-date" onfocus="(this.type='date')" onblur="(this.type='text')">
-            </div>
-   
-            <img src="../assets/arrow.png" class="arrow-img" alt="arrow-svg">
-   
-            <div class="user-details">
-                <input type="text" name="user-name" id="uname" v-model="inputVals.passenger" placeholder="Passenger" class="bck-user">
-                <button class="submitbtn" type="submit">Search</button>
-            </div>
-        </form>
-    </fieldset>
+              <div class="flight-details">
+                  <input type="text" v-model="inputVals.source" name="source-field" id="src-fld" placeholder="Origin" class="bck-origin">
+                  <input type="text" v-model="inputVals.destination" name="destination-field" id="dst-fld" placeholder="Destination" class="bck-origin">
+                  <input type="text" v-model="inputVals.departure" name="start-date" id="start-date" placeholder="Depart" class="bck-date" onfocus="(this.type='date')" onblur="(this.type='text')">
+                  <input type="text" v-model="inputVals.arrival" name="end-date" id="end-date" placeholder="Return" class="bck-date" onfocus="(this.type='date')" onblur="(this.type='text')">
+              </div>
+    
+              <img src="../assets/arrow.png" class="arrow-img" alt="arrow-svg">
+    
+              <div class="user-details">
+                  <input type="text" name="user-name" id="uname" v-model="inputVals.passenger" placeholder="Passenger" class="bck-user">
+                  <button class="submitbtn" type="submit">Search</button>
+              </div>
+          </form>
+      </fieldset>
     </div>
 </template>
 
@@ -43,6 +43,7 @@ export default {
     };
   },
   methods: {
+    //Emitting the input values to parent component
     submit(inputVals) {
       //  this.$emit("formSub", ...this.inputVals);
       this.$emit("formSub", inputVals);
@@ -67,7 +68,7 @@ fieldset {
 .search-box {
   background-color: white;
   min-height: 200px;
-  margin: -160px 100px 0;
+  margin: -245px 100px 0;
   padding: 20px 50px 10px;
   box-sizing: border-box;
   border-radius: 8px;
@@ -83,12 +84,7 @@ input[type="date"] {
   box-shadow: none;
   width: 160px;
 }
-/* .arrow-img {
-  display: inline;
-} */
-/* fieldset {
-  margin: auto;
-} */
+
 .radio-btns {
   float: right;
   margin: 10px 0 40px 0;

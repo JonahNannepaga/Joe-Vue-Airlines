@@ -5,15 +5,16 @@
                 <div class="preview-list-item">
                     <span class="preview-title">{{details.source | state-code}} </span>
                     <span class="preview-city">{{details.source}}</span>
-                    <span class="preview-city">{{details.departure}}</span>
+                    <span class="preview-city">{{details.departure | date-string}}</span>
                 </div>
             </li>
-            <li><img src="../assets/preview.png"></li>
-            <li> 
+            <li><img src="../assets/preview.png" alt="tripimage"></li>
+            <!-- <img :src="details.trip === 'one' ? this.tripimage.oneway : this.tripimage.roundtrip"> -->
+            <li>
                 <div class="preview-list-item">
                     <span class="preview-title">{{details.destination | state-code}}  </span>
                     <span class="preview-city">{{details.destination}}</span>
-                    <span class="preview-city">{{details.arrival}}</span>
+                    <span class="preview-city" v-show="details.trip=='round'" >{{details.arrival | date-string}}</span>
                 </div>
             </li>
             <li>
@@ -37,7 +38,11 @@
 export default {
   data() {
     return {
-      displaycontent: false
+      displaycontent: false,
+      tripimage: {
+        oneway: "../assets/preview-one.png",
+        roundtrip: "../assets/preview.png"
+      }
     };
   },
   props: ["details"],

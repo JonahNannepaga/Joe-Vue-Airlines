@@ -1,16 +1,19 @@
 <template>
     <main>
+        <!-- Banner image -->
          <div class="banner-block banner" >
-        <img src="../assets/Banner.png" class="banner" alt="banner">
+            <img src="../assets/Banner.png" class="banner" alt="banner">
          </div>
+        <!-- Form Component - searching -->
         <form-section @formSub="previewData"></form-section>
+        <!-- Preview Component - displays details  -->
         <preview :details='details'></preview>
+        <!-- List Component - displays the available flights -->
         <list-view :alldata='alldata' :details='details' :filterMethod='filterMethod' :filterMethodround='filterMethodround'></list-view>
     </main>
 </template>
 
 <script>
-/* eslint-disable */
 import _ from "lodash";
 import Form from "../components/FormComponent.vue";
 import Preview from "../components/Preview.vue";
@@ -22,7 +25,6 @@ export default {
       alldata: {}
     };
   },
-
   components: {
     "form-section": Form,
     preview: Preview,
@@ -32,19 +34,19 @@ export default {
     previewData(inputVals) {
       console.log(inputVals); // eslint-disable-line no-console
       this.details = inputVals;
-      //   console.log(inputVals);
+      //console.log(inputVals);
     }
   },
   computed: {
+    //filter oneway
     filterMethod() {
-      //   return _.filter(this.alldata, ["from", this.details.source]);
       return _.filter(this.alldata, {
         from: this.details.source,
         to: this.details.destination
       });
     },
+    //filter twoway
     filterMethodround() {
-      //   return _.filter(this.alldata, ["from", this.details.source]);
       return _.filter(this.alldata, {
         from: this.details.destination,
         to: this.details.source
@@ -59,10 +61,10 @@ export default {
       return data;
     }
 
+    //Fetching all the flights data initially
     getAllflights("flightdb").then(data => {
-      console.log(data);
+      console.log("myjson data is fetched" + data); // eslint-disable-line no-console
       this.alldata = data;
-      console.log("myjson data is fetched");
     });
   }
 };

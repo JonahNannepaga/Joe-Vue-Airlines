@@ -1,5 +1,6 @@
 <template>
     <div class="list-section" v-show="details.trip != undefined">
+        <!--Flight Details oneway-->
         <div class="render-block" >
             <table>
                 <thead>
@@ -22,7 +23,7 @@
                 </tbody>
             </table>
         </div>
-
+        <!--Flight Details roundtrip-->
         <div class="render-block" v-show="details.trip == 'round'">
             <table>
                 <thead>
@@ -51,17 +52,7 @@
 
 <script>
 export default {
-  props: ["alldata", "details", "filterMethod", "filterMethodround"],
-  data() {
-    return {
-      alldetails: ""
-    };
-  },
-  methods: {},
-  created() {
-    this.alldetails = this.alldata;
-    console.log(this.alldetails); // eslint-disable-line no-console
-  }
+  props: ["alldata", "details", "filterMethod", "filterMethodround"]
 };
 </script>
 
@@ -73,11 +64,11 @@ export default {
 th {
   font-size: 1.25rem;
   padding-right: 15px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 td {
   padding-right: 15px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .render-block {

@@ -13,6 +13,16 @@ Vue.filter('state-code', function (value) {
   return str;
 });
 
+//filter to convert date to string
+Vue.filter('date-string', function (value) {
+  if (value == undefined) {
+    return;
+  }
+  var mydate = new Date(value);
+  var finalval = mydate.toDateString().slice(4, 10).split(" ").reverse().join("-");
+  return finalval;
+});
+
 new Vue({
   render: h => h(App),
 }).$mount('#app')

@@ -6,7 +6,6 @@
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
 import Header from "./components/Header.vue";
 import Main from "./components/MainComponent.vue";
 
@@ -15,7 +14,6 @@ export default {
   components: {
     "header-component": Header,
     "main-component": Main
-    // HelloWorld
   }
 };
 </script>

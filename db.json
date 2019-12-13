@@ -3,8 +3,8 @@
             "fno": 121133,
             "from": "Delhi",
             "to": "Hyderabad",
-            "fromtime": "22:30",
-            "totime": "00:40",
+            "fromtime": "23:30",
+            "totime": "01:40",
             "duration": "2hr 10min",
             "price": 2500
         },
@@ -12,17 +12,17 @@
             "fno": 121134,
             "from": "Delhi",
             "to": "Hyderabad",
-            "fromtime": "22:30",
-            "totime": "00:40",
+            "fromtime": "23:30",
+            "totime": "01:40",
             "duration": "2hr 10min",
-            "price": 2500
+            "price": 3500
         },
         {
             "fno": 121135,
             "from": "Delhi",
             "to": "Hyderabad",
-            "fromtime": "22:30",
-            "totime": "00:40",
+            "fromtime": "23:30",
+            "totime": "01:40",
             "duration": "2hr 10min",
             "price": 2500
         },
@@ -42,7 +42,7 @@
             "fromtime": "22:30",
             "totime": "00:40",
             "duration": "2hr 10min",
-            "price": 2500
+            "price": 3500
         },
         {
             "fno": 121144,
@@ -57,10 +57,10 @@
             "fno": 121145,
             "from": "Hyderabad",
             "to": "Delhi",
-            "fromtime": "22:30",
-            "totime": "00:40",
+            "fromtime": "21:30",
+            "totime": "23:40",
             "duration": "2hr 10min",
-            "price": 2500
+            "price": 3500
         },
         {
             "fno": 121146,
@@ -78,7 +78,7 @@
             "fromtime": "22:30",
             "totime": "00:40",
             "duration": "2hr 10min",
-            "price": 2500
+            "price": 3500
         },
         {
             "fno": 121178,
@@ -105,7 +105,7 @@
             "fromtime": "22:30",
             "totime": "00:40",
             "duration": "2hr 10min",
-            "price": 2500
+            "price": 3500
         },
         {
             "fno": 121160,
@@ -132,7 +132,7 @@
             "fromtime": "22:30",
             "totime": "00:40",
             "duration": "2hr 10min",
-            "price": 2500
+            "price": 3500
         },
         {
             "fno": 121138,
@@ -141,7 +141,7 @@
             "fromtime": "22:30",
             "totime": "00:40",
             "duration": "2hr 10min",
-            "price": 2600
+            "price": 3000
         },
         {
             "fno": 121141,
