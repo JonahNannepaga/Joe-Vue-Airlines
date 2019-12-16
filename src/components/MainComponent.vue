@@ -35,6 +35,11 @@ export default {
       console.log(inputVals); // eslint-disable-line no-console
       this.details = inputVals;
       //console.log(inputVals);
+    },
+    async getAllflights(filename) {
+      let response = await fetch(`http://localhost:3000/${filename}`);
+      let data = await response.json();
+      return data;
     }
   },
   computed: {
@@ -45,6 +50,7 @@ export default {
         to: this.details.destination
       });
     },
+
     //filter twoway
     filterMethodround() {
       return _.filter(this.alldata, {
@@ -55,15 +61,10 @@ export default {
   },
 
   created() {
-    async function getAllflights(filename) {
-      let response = await fetch(`http://localhost:3000/${filename}`);
-      let data = await response.json();
-      return data;
-    }
-
     //Fetching all the flights data initially
-    getAllflights("flightdb").then(data => {
-      console.log("myjson data is fetched" + data); // eslint-disable-line no-console
+    this.getAllflights("flightdb").then(data => {
+      console.log(data); // eslint-disable-line no-console
+      console.log("myjson data is fetched"); // eslint-disable-line no-console
       this.alldata = data;
     });
   }

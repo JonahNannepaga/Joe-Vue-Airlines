@@ -8,8 +8,7 @@
                     <span class="preview-city">{{details.departure | date-string}}</span>
                 </div>
             </li>
-            <li><img src="../assets/preview.png" alt="tripimage"></li>
-            <!-- <img :src="details.trip === 'one' ? this.tripimage.oneway : this.tripimage.roundtrip"> -->
+            <li><img :src="this.details.trip === 'oneway' ? require(`@/assets/${this.tripimage.oneway}.png`) : require(`@/assets/${this.tripimage.roundtrip}.png`)" alt="dynamicimage"></li>
             <li>
                 <div class="preview-list-item">
                     <span class="preview-title">{{details.destination | state-code}}  </span>
@@ -40,13 +39,12 @@ export default {
     return {
       displaycontent: false,
       tripimage: {
-        oneway: "../assets/preview-one.png",
-        roundtrip: "../assets/preview.png"
+        oneway: "preview-one",
+        roundtrip: "preview"
       }
     };
   },
   props: ["details"],
-
   updated() {
     this.displaycontent = true;
   }
@@ -86,7 +84,6 @@ export default {
   font-weight: bold;
 }
 .change-btn {
-  /* width: 100px; */
   padding: 10px 25px;
   background: transparent;
   border: 1px solid #3f419970;
