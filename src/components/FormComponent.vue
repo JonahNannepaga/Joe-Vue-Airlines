@@ -13,8 +13,8 @@
               <div class="flight-details">
                   <input type="text" v-model="inputVals.source" name="source-field" id="src-fld" placeholder="Origin" class="bck-origin">
                   <input type="text" v-model="inputVals.destination" name="destination-field" id="dst-fld" placeholder="Destination" class="bck-origin">
-                  <input type="text" v-model="inputVals.departure" name="start-date" id="start-date" placeholder="Depart" class="bck-date" onfocus="(this.type='date')" onblur="(this.type='text')">
-                  <input type="text" v-model="inputVals.arrival" name="end-date" id="end-date" placeholder="Return" class="bck-date" onfocus="(this.type='date')" onblur="(this.type='text')">
+                  <input type="text" v-model="inputVals.depature" name="start-date" id="start-date" placeholder="Depart" class="bck-date" onfocus="(this.type='date')" onblur="(this.type='text')">
+                  <input type="text" v-model="inputVals.arrival" name="end-date" id="end-date" placeholder="Return" class="bck-date" onfocus="(this.type='date')" onblur="(this.type='text')">   
               </div>
     
               <img src="../assets/arrow.png" class="arrow-img" alt="arrow-svg">
@@ -36,8 +36,10 @@ export default {
         trip: "",
         source: "",
         destination: "",
-        departure: "",
+        depature: "",
         arrival: "",
+        departureday: "",
+        arrivalday: "",
         passenger: ""
       }
     };
@@ -48,6 +50,21 @@ export default {
       //  this.$emit("formSub", ...this.inputVals);
       this.$emit("formSub", inputVals);
     }
+  },
+  updated() {
+    var arrdate = new Date(this.inputVals.arrival);
+    var depdate = new Date(this.inputVals.depature);
+    var options = { weekday: "long" };
+
+    this.inputVals.arrivalday = new Intl.DateTimeFormat(
+      "en-US",
+      options
+    ).format(arrdate);
+
+    this.inputVals.departureday = new Intl.DateTimeFormat(
+      "en-US",
+      options
+    ).format(depdate);
   }
 };
 </script>

@@ -5,7 +5,7 @@
                 <div class="preview-list-item">
                     <span class="preview-title">{{details.source | state-code}} </span>
                     <span class="preview-city">{{details.source}}</span>
-                    <span class="preview-city">{{details.departure | date-string}}</span>
+                    <span class="preview-city">{{details.depature | date-string}}</span>
                 </div>
             </li>
             <li><img :src="this.details.trip === 'oneway' ? require(`@/assets/${this.tripimage.oneway}.png`) : require(`@/assets/${this.tripimage.roundtrip}.png`)" alt="dynamicimage"></li>

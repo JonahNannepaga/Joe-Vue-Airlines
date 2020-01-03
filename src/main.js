@@ -18,8 +18,8 @@ Vue.filter('date-string', function (value) {
   if (value == undefined) {
     return;
   }
-  var mydate = new Date(value);
-  var finalval = mydate.toDateString().slice(4, 10).split(" ").reverse().join("-");
+  var somedate = new Date(value);
+  var finalval = somedate.toDateString().slice(4, 10).split(" ").reverse().join("-");
   return finalval;
 });
 

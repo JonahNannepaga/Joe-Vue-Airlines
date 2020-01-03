@@ -6,7 +6,32 @@
             "fromtime": "23:30",
             "totime": "01:40",
             "duration": "2hr 10min",
-            "price": 2500
+            "price": 2500,
+            "day": "Monday",
+            "round": true
+        },
+        {
+            "fno": 121133,
+            "from": "Delhi",
+            "to": "Hyderabad",
+            "fromtime": "23:30",
+            "totime": "01:40",
+            "duration": "2hr 10min",
+            "price": 2500,
+            "day": "Thursday",
+            "round": true
+        },
+
+        {
+            "fno": 121133,
+            "from": "Delhi",
+            "to": "Hyderabad",
+            "fromtime": "23:30",
+            "totime": "01:40",
+            "duration": "2hr 10min",
+            "price": 2500,
+            "day": "Thursday",
+            "round": true
         },
         {
             "fno": 121134,
@@ -15,7 +40,9 @@
             "fromtime": "23:30",
             "totime": "01:40",
             "duration": "2hr 10min",
-            "price": 3500
+            "price": 3500,
+            "day": "Monday",
+            "round": true
         },
         {
             "fno": 121135,
@@ -24,7 +51,9 @@
             "fromtime": "23:30",
             "totime": "01:40",
             "duration": "2hr 10min",
-            "price": 2500
+            "price": 2500,
+            "day": "Monday",
+            "round": true
         },
         {
             "fno": 121136,
@@ -33,7 +62,9 @@
             "fromtime": "22:30",
             "totime": "00:40",
             "duration": "2hr 10min",
-            "price": 2500
+            "price": 2500,
+            "day": "Thursday",
+            "round": true
         },
         {
             "fno": 121143,
@@ -42,7 +73,9 @@
             "fromtime": "22:30",
             "totime": "00:40",
             "duration": "2hr 10min",
-            "price": 3500
+            "price": 3500,
+            "day": "Monday",
+            "round": true
         },
         {
             "fno": 121144,
@@ -51,7 +84,9 @@
             "fromtime": "22:30",
             "totime": "00:40",
             "duration": "2hr 10min",
-            "price": 2500
+            "price": 2500,
+            "day": "Thursday",
+            "round": true
         },
         {
             "fno": 121145,
@@ -60,7 +95,9 @@
             "fromtime": "21:30",
             "totime": "23:40",
             "duration": "2hr 10min",
-            "price": 3500
+            "price": 3500,
+            "day": "Monday",
+            "round": true
         },
         {
             "fno": 121146,
@@ -69,7 +106,9 @@
             "fromtime": "22:30",
             "totime": "00:40",
             "duration": "2hr 10min",
-            "price": 2500
+            "price": 2500,
+            "day": "Thursday",
+            "round": true
         },
         {
             "fno": 121157,
@@ -78,7 +117,9 @@
             "fromtime": "22:30",
             "totime": "00:40",
             "duration": "2hr 10min",
-            "price": 3500
+            "price": 3500,
+            "day": "Monday",
+            "round": true
         },
         {
             "fno": 121178,
@@ -87,7 +128,9 @@
             "fromtime": "22:30",
             "totime": "00:40",
             "duration": "2hr 10min",
-            "price": 2500
+            "price": 2500,
+            "day": "Thursday",
+            "round": true
         },
         {
             "fno": 121158,
@@ -96,7 +139,9 @@
             "fromtime": "22:30",
             "totime": "00:40",
             "duration": "2hr 10min",
-            "price": 2500
+            "price": 2500,
+            "day": "Monday",
+            "round": true
         },
         {
             "fno": 121159,
@@ -105,7 +150,9 @@
             "fromtime": "22:30",
             "totime": "00:40",
             "duration": "2hr 10min",
-            "price": 3500
+            "price": 3500,
+            "day": "Monday",
+            "round": true
         },
         {
             "fno": 121160,
@@ -114,7 +161,9 @@
             "fromtime": "22:30",
             "totime": "00:40",
             "duration": "2hr 10min",
-            "price": 2500
+            "price": 2500,
+            "day": "Monday",
+            "round": true
         },
         {
             "fno": 121161,
@@ -123,7 +172,9 @@
             "fromtime": "22:30",
             "totime": "00:40",
             "duration": "2hr 10min",
-            "price": 2500
+            "price": 2500,
+            "day": "Monday",
+            "round": true
         },
         {
             "fno": 121162,
@@ -132,7 +183,9 @@
             "fromtime": "22:30",
             "totime": "00:40",
             "duration": "2hr 10min",
-            "price": 3500
+            "price": 3500,
+            "day": "Monday",
+            "round": true
         },
         {
             "fno": 121138,
@@ -141,7 +194,9 @@
             "fromtime": "22:30",
             "totime": "00:40",
             "duration": "2hr 10min",
-            "price": 3000
+            "price": 3000,
+            "day": "Monday",
+            "round": true
         },
         {
             "fno": 121141,
@@ -150,7 +205,9 @@
             "fromtime": "22:30",
             "totime": "00:40",
             "duration": "2hr 10min",
-            "price": 2600
+            "price": 2600,
+            "day": "Thursday",
+            "round": true
         },
         {
             "fno": 121142,
@@ -159,7 +216,9 @@
             "fromtime": "22:30",
             "totime": "00:40",
             "duration": "2hr 10min",
-            "price": 2600
+            "price": 2600,
+            "day": "Thursday",
+            "round": true
         }
     ]
 }

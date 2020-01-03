@@ -32,7 +32,7 @@ export default {
   },
   methods: {
     previewData(inputVals) {
-      console.log(inputVals); // eslint-disable-line no-console
+      console.log("user input values", inputVals); // eslint-disable-line no-console
       this.details = inputVals;
       //console.log(inputVals);
     },
@@ -47,7 +47,8 @@ export default {
     filterMethod() {
       return _.filter(this.alldata, {
         from: this.details.source,
-        to: this.details.destination
+        to: this.details.destination,
+        day: this.details.departureday
       });
     },
 
@@ -55,7 +56,8 @@ export default {
     filterMethodround() {
       return _.filter(this.alldata, {
         from: this.details.destination,
-        to: this.details.source
+        to: this.details.source,
+        day: this.details.departureday
       });
     }
   },
